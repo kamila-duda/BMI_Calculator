@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+	<title></title>
+	
+	<meta name="description" content="Opis w Google" />
+	<meta name="keywords" content="słowa, kluczowe, wypisane, po, porzecinku" />
+	<link rel="stylesheet" href="bmi.css" type="text/css" />
+	<script type="text/javascript" src="wylicz.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Signika&display=swap" rel="stylesheet"> 
+	
+	
+</head>
+<title>Kalkulator BMI</title>
+<body>
+<header>
+				<h1>Kalkulator wskaźnika masy ciała (BMI)</h1>
+		</header>
+
+<main id="container">
+		
+		<div id="tile1">
+				<h2>Zakres wskaźnika masy ciała BMI</h2>
+								<table>
+										<tr id="etykieta"><th>Wartość BMI</th><th>Oznaczenie</th></tr>
+										<tr class="red"><td>poniżej 16</td><td>wygłodzenie</td></tr>
+										<tr class="orange"><td>16,0-16,99</td><td>wychudzenie</td></tr>
+										<tr class="yellow"><td>17,0-18,49</td><td>niedowaga</td></tr>
+										<tr id="green"><td>18,5-24,99</td><td>wartość prawidłowa</td></tr>
+										<tr class="yellow"><td>25,0-29,99</td><td>nadwaga</td></tr>
+										<tr class="orange"><td>30,0–34,99</td><td>I stopień otyłości</td></tr>
+										<tr class="red"><td>35,0–39,99</td><td>II stopień otyłości </br>(otyłość kliniczna)</td></tr>
+										<tr class="red"><td>powyżej 40</td><td>III stopień otyłości </br> (otyłość skrajna)</td></tr>
+								</table>
+		</div>
+		<div id="tile2"> 
+						
+								<h2>Oblicz swój wskaźnik masy ciała</h2>
+						
+								<div class="podaj"><p>Wpisz swoją wagę w kilogramach:</br> Uwaga! Proszę używać kropek zamiast przecinków.</p></div><div class="wartosc"><input type="text" id="masa" onchange="sprawdzMase()" placeholder="np: 55.3"/></div>
+								<div class="podaj"><p>Wpisz swój wzrost w centymetrach:</p></div><div class="wartosc"><input type="text" id="wzrost" onchange="sprawdzWzrost()" placeholder="np: 165"/></div>
+								<button onclick="wylicz()">Oblicz BMI</button>
+								
+								<div id="wynik"></div>
+								
+		</div>
+</main>
+<footer>
+		<div>Wszelkie prawa zastrzeżone &copy; Autor strony: Kamila Duda</div>
+</footer>
+</body>
