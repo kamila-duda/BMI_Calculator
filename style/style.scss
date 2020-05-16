@@ -1,0 +1,121 @@
+$color: #343637;
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Signika', sans-serif;
+	background-color: #cbc9c8;
+	color: $color;
+    margin: 0;
+    padding: 0;
+}
+.calculator__header{
+    height: 70px;
+    padding-top: 30px;
+    text-align: center;
+    h1{
+        margin:0;
+    }
+}
+.calculator__title {
+    font-size: 30px;
+}
+.calculator__container {
+	width: 80vw;
+	min-height: calc(100vh - 85px);
+	padding: 10px;
+	margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+.calculator__tile{
+    width: 400px;
+	min-height: 400px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #ffffff;
+}
+.calculator__tile--left{
+	@extend .calculator__tile;
+}
+.calculator__table{
+	border: 3px solid #000000;
+	border-collapse: collapse;
+	text-align: center;
+    margin: 20px auto;
+    th, td{
+        border: 3px solid #000000;
+        padding: 7px 20px;
+    }
+}
+.calculator__table--etykieta {
+    @extend .calculator__table;
+	letter-spacing: 3px;
+	font-weight: bold;
+	background-color: $color;
+	color: #ffffff;
+}
+.calculator__table--redline{
+    @extend .calculator__table;
+    background-color: #ff0000;
+}
+.calculator__table--orangeline{
+    @extend .calculator__table;
+    background-color: #ff9900;
+}
+.calculator__table--yellowline{
+    @extend .calculator__table;
+    background-color: #ffff00;
+}
+.calculator__table--greenline{
+    @extend .calculator__table;
+    background-color: #00cc00;
+}
+.calculator__tile--right{
+    @extend .calculator__tile;
+    padding: 0px 25px;
+}
+.calculator__command{
+    text-align: left;
+    line-height: 1.5;
+}
+.calculator__input{
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid gray;
+    border-radius: 3px;
+}
+.calculator__button{
+    margin: 20px;
+	padding: 10px;
+	border-radius: 3px;
+    text-align: center;
+    background-color: $color;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    border: 2px solid gray;
+    &:focus{
+        outline: unset;
+    }
+    &:hover{
+        background-color: gray;
+    }
+}
+.calculator__result{
+    text-align: left;
+}
+.footer{
+    font-size: 12px;
+    height: 15px;
+    text-align: center;
+    p{
+        margin:0;
+    }
+}
