@@ -1,5 +1,6 @@
 # BMI Calculator
-> A simple BMI Calculator. Check your weight!
+> A simple BMI Calculator. Check your weight! kamila-duda.github.io/bmi_calculator/
+
 
 ## Table of contents
 * [Technologies](#technologies)
