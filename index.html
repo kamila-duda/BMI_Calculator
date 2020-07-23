@@ -10,7 +10,7 @@
 	<meta name="description" content="Opis w Google" />
 	<meta name="keywords" content="słowa, kluczowe, wypisane, po, porzecinku" />
 	<link rel="stylesheet" href="style/style.css" type="text/css" />
-	<script type="text/javascript" src="wylicz.js"></script>
+	<script type="text/javascript" src="script.js" defer></script>
 	<link href="https://fonts.googleapis.com/css?family=Signika&display=swap" rel="stylesheet">
 
 
@@ -23,7 +23,7 @@
 
 	<main class="calculator__container">
 
-		<div class="calculator__tile--left">
+		<section class="calculator__tile--left">
 			<h2>Zakres wskaźnika masy ciała BMI</h2>
 			<table class="calculator__table">
 				<tr class="calculator__table--etykieta">
@@ -63,24 +63,24 @@
 					<td>III stopień otyłości </br> (otyłość skrajna)</td>
 				</tr>
 			</table>
-		</div>
-		<div class="calculator__tile--right">
+		</section>
+		<section class="calculator__tile--right">
 
 			<h2>Oblicz swój wskaźnik masy ciała</h2>
 
 			<div class="calculator__command">
 				<p>Wpisz swoją wagę w kilogramach:</br> Uwaga! Proszę używać kropek zamiast przecinków.</p>
 			</div>
-			<input class="calculator__input" type="text" id="masa" onchange="sprawdzMase()" placeholder="np: 55.3" />
+			<input class="calculator__input" type="text" id="masa" placeholder="np: 55.3" required />
 			<div class="calculator__command">
 				<p>Wpisz swój wzrost w centymetrach:</p>
 			</div>
-			<input class="calculator__input" type="text" id="wzrost" onchange="sprawdzWzrost()" placeholder="np: 165" />
-			<button class="calculator__button" onclick="wylicz()">Oblicz BMI</button>
+			<input class="calculator__input" type="text" id="wzrost" placeholder="np: 165" required/>
+			<button class="calculator__button">Oblicz BMI</button>
 
 			<div class="calculator__result" id="wynik"></div>
 
-		</div>
+		</section>
 	</main>
 	<footer class="footer">
 		<p>Wszelkie prawa zastrzeżone &copy; Autor strony: Kamila Duda</p>
